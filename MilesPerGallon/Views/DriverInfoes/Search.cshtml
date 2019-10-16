@@ -1,0 +1,75 @@
+﻿@model IEnumerable<MilesPerGallon.DriverInfo>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Search</h1>
+
+
+<input id='myInput' onkeyup='searchTable()' type='text'>
+<script src="~/js/Search.js"></script>
+
+
+<table id="myTable" class="table">
+    <thead>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilesDriven)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GallonsFilled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FillupDate)
+            </th>
+            <th>
+                MilesPerGallon
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarModel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MilesDriven)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GallonsFilled)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FillupDate)
+                </td>
+                <td>
+                    @(item.MilesDriven / item.GallonsFilled)
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+

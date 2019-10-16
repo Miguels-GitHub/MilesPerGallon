@@ -1,0 +1,6 @@
+C:\Users\svest\source\repos\MPGDatabase\bin\Debug\MPGDatabase.dacpac
+C:\Users\svest\source\repos\MPGDatabase\bin\Debug\MPGDatabase.dll
+C:\Users\svest\source\repos\MPGDatabase\bin\Debug\MPGDatabase.pdb
+C:\Users\svest\source\repos\MPGDatabase\obj\Debug\MPGDatabase.sqlprojAssemblyReference.cache
+C:\Users\svest\source\repos\MPGDatabase\obj\Debug\MPGDatabase.dll
+C:\Users\svest\source\repos\MPGDatabase\obj\Debug\MPGDatabase.pdb
